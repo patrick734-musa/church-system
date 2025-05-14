@@ -1,0 +1,74 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image:url('image6.jpg');
+    background-attachment:fixed;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #BDB76B;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Content Styles */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+}
+
+/* Input Styles */
+input[type="text"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+button {
+    background-color:  rgb(238, 179, 29);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  rgb(238, 179, 29);
+}

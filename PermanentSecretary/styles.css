@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    background-color:#F0E68C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 140vh;
+}
+
+header {
+    background-color: #BDB76B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color:rgba(0,0,0, 0.1);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    margin-top: 700px;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+/* Forms and Inputs */
+form {
+    max-width: 620px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #da9310;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgba(221, 83, 15, 0.973);
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+table td, table th {
+    padding: 12px;
+    color: black;
+}
+table tr:nth-child(n+1) {
+    background-color: #E0FFFF;
+}
+table tr:nth-child(1) {
+    background-color:  #DEB887;
+}
+tr:hover {
+    background-color: #f1ebeb;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+ form.log{
+    background-color: rgba(218, 216, 214,.2);
+      margin-top: 100;
+      border: none;
+      transform: translate(55%,22%);
+      box-shadow: 2px rgba(248, 246, 245, 0.973);
+}
+    .marquee {
+           
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .login-error {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+            position:hidden;
+        }
