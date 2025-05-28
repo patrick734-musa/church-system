@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     <form action="" method="post">
         <center><img src="PermanentSecretary/EAGT LOGO.jpg" style="height:90px;width:90px;border-radius:200px;borded:1px solid;" alt=""></center>
         <center><div style="color:yellow;"> LOGIN </div></center><br>
-        <?php if (isset($login_error)) { echo "<p>$login_error</p>"; } ?>
+<!--         <?php if (isset($login_error)) { echo "<p>$login_error</p>"; } ?> -->
         <label>Username:</label>
         <input type="text" name="username" required><br>
         <label>Password:</label>
@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 </body>
 <script>
     document.getElementById('back').addEventListener("click",function(){
-        window.location.href="home.php";
+        window.location.href="index.html";
     });
     </script>
 </html>
